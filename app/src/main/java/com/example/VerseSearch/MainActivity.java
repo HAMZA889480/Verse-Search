@@ -48,8 +48,10 @@ public class MainActivity extends AppCompatActivity {
 
                     int resultIndex=num1+Integer.parseInt(ayat_num);
 
+                    //Get the ayats of current para
                     int ayats=rec.SSP[(Integer.parseInt(para_num))+1];
 
+                    //If ayats of current para are greater than resulted value (False)
                     if(resultIndex>ayats)
                     {
                         Toast.makeText(MainActivity.this, "Invalid Record", Toast.LENGTH_SHORT).show();
