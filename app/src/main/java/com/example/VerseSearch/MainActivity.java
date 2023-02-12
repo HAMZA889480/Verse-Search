@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Toast.makeText(MainActivity.this, "Provide Details", Toast.LENGTH_SHORT).show();
                 }
+
+
                 else
                 {
                     QuranRecord rec=new QuranRecord();
