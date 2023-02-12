@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noorehuda_regular"
+        android:text="Verse Search"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="70dp"
+
+
+        android:layout_marginLeft="100dp"/>
+
+
+    <EditText
+        android:id="@+id/Para"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/search"
+
+        android:textColorHint="@android:color/darker_gray"
+        android:hint="Para Number"
+        android:background="@drawable/edit"
+        android:paddingLeft="8dp"
+
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="70dp"/>
+
+    <EditText
+        android:id="@+id/ayat"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Para"
+        android:paddingLeft="8dp"
+
+
+
+        android:background="@drawable/edit"
+        android:textColorHint="@android:color/darker_gray"
+        android:hint="Ayat Number"
+
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@+id/ayat"
+        android:layout_marginTop="70dp"
+
+        android:background="@drawable/edit_corner"
+        android:text="Search"
+        android:textSize="20sp"
+        android:backgroundTint="#03A9F4"
+        android:layout_marginLeft="80dp"/>
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Result"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+
+        android:layout_below="@+id/search_btn"
+        android:layout_marginLeft="120dp"/>
+
+    <EditText
+        android:id="@+id/verse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text=""
+        android:layout_below="@+id/search_btn"
+        android:layout_marginTop="150dp"
+        android:textDirection="rtl"
+        android:marqueeRepeatLimit="marquee_forever"/>
+
+
+
+</RelativeLayout>
