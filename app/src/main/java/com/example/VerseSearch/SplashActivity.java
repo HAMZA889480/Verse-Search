@@ -11,6 +11,9 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
         setContentView(R.layout.activity_splash);
 
         Intent iHome=new Intent(SplashActivity.this,MainActivity.class);
